@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour {
 			resetCount = resetCount + 1;
        		UpdateResetText();
 
-        	rb.velocity = Vector3.zero;
+        	rb.linearVelocity = Vector3.zero;
             transform.position = startPosition;
         }
     }
@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour {
 			gameWon = true;
 			// Set the text value of our 'winText'
 			winText.text = "You Win!\nDeaths: " + resetCount.ToString();
-			rb.velocity = Vector3.zero;
+			rb.linearVelocity = Vector3.zero;
 		}
 	}
 
